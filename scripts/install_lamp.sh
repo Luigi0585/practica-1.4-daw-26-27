@@ -1,5 +1,4 @@
 #!/bin/bash
-<<<<<<< HEAD
 # e: Finaliza si hay errores.
 # x: Muestra los comandos que se están ejecutando.
 set -ex
@@ -31,7 +30,6 @@ apt install apache2 -y
 #
 #sudo systemctl restart apache2
 
-=======
 
 # Configuramos el script para que se muestren los comandos
 # y finalice cuando hay un error en la ejecución
@@ -46,7 +44,6 @@ apt upgrade -y
 # Instalamos el servidor web Apache
 apt install apache2 -y
 
->>>>>>> 04be3ffb5ca3c9c58f5a3670a464c112a5b6239f
 # Copiamos nuestro archivo de configuración de VirtualHost
 cp ../conf/000-default.conf /etc/apache2/sites-available
 
@@ -66,8 +63,4 @@ cp ../php/index.php /var/www/html
 chown -R www-data:www-data /var/www/html
 
 # Instalamos MySQL Server
-<<<<<<< HEAD
 apt install mysql-server -y
-=======
-apt install mysql-server -y
->>>>>>> 04be3ffb5ca3c9c58f5a3670a464c112a5b6239f
