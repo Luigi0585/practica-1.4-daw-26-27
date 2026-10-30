@@ -30,8 +30,10 @@ sudo openssl req \
   a2enmod ssl
 
   # Copiamos el archivo de configuración de Apache para redirigir HTTP a HTTPS
+  cp ../conf/000-default.conf /etc/apache2/sites-available/000-default.conf 
 
   # Habilitamos el módulo de reescritura de Apache
+  sudo a2enmod rewrite
 
   # Reiniciamos Apache para aplicar los cambios
   systemctl restart apache2
